@@ -2,11 +2,8 @@ var http = require('http');
 
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {"Content-Type": "text/plain"});
-  text = "Nodejs is running. Port : :" + process.versions.node
-
-
+  text = "Nodejs is running. Version : :" + process.versions.node
   response.end(text);
-
 });
 
 var port = process.env.PORT || 8080;

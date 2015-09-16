@@ -12,9 +12,9 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
 
-RUN mkdir -p /var/www/smartwifi/
+RUN mkdir -p /var/www/app/
 
 
-ADD app.js /var/www/app.js
+ADD app.js /var/www/app/app.js
 
-CMD ["/usr/bin/node", "/var/www/app.js"] 
+CMD ["/usr/bin/node", "/var/www/app/app.js"] 
